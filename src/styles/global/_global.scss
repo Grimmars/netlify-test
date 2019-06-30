@@ -17,6 +17,12 @@ body {
   max-width: 100%;
 }
 
+.gradient {
+  background: -webkit-linear-gradient(top, #00a01b 0%, rgb(0, 0, 0) 40%, #00a01b 150%), -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
+  background: linear-gradient(to bottom, #00a01b 0%, rgb(0, 0, 0) 40%, #00a01b 150%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
+  background-blend-mode: multiply; 
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
@@ -34,7 +40,26 @@ img {
   display: block;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  padding: 5px;
+}
+
+.griditems {
+  background-color: Turquoise;
+  border-radius: 8px;
+  font-size: 24px;
+}
+
 ul {
   padding: 0;
   list-style: none;
+}
+
+#fakediv {
+  margin: 5px;
+  padding: 5px;
+  background-color: white;
 }
